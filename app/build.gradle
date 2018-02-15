@@ -1,0 +1,266 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    flavorDimensions "default"
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.paybyonline.ebiz"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 18
+        versionName "3.0.4"
+        multiDexEnabled true
+    }
+    buildTypes {
+//        debug {
+//            shrinkResources true
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+/*        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+    }
+
+    productFlavors {
+//        main {
+//            applicationId "com.paybyonline.ebiz"
+//            versionCode 22
+//            versionName = "3.0.5"
+//            dimension "default"
+//            resValue "string", "app_name", "Mobalet"
+//            resValue "string", "title_activity_login", "Mobalet"
+//            resValue "string", "title_activity_initial_loading", "Mobalet"
+//            resValue "string", "referralId", "3fe96f2"
+//            resValue "string", "about_heading_details", "<b>Mobalet (Mobile Wallet)</b> is a Mobile Application developed by Nepal E-Biz Management Pvt Ltd using its in-house proprietary technology ‘Paybyonline’. The Application allows customers to hold funds in Mobalet (Mobile Wallet) and pay for available products and services such as Telecom/Mobile top ups, ISP recharge/renewal, Satellite/Cable TV charges top up and renewals, Utility Bills, School Fees, Airline Tickets, Bus Tickets, Hotel Booking, Restaurant Payment, Taxi payments, and e-Commerce Shopping"
+//            resValue "string", "domain", "www.mobalet.com"
+//            resValue "string", "facebook_app_id", "159365804689671"
+//            resValue "string", "fb_login_protocol_scheme", "fb159365804689671"
+//            resValue "string", "com.twitter.sdk.android.CONSUMER_KEY", "PJFSldK6QGyC5INkP3uFZ54eW"
+//            resValue "string", "com.twitter.sdk.android.CONSUMER_SECRET", "uhDXvCbQNOtkzkSlukfndRPIkjZ07PxUJlDjm265IR7GTbC6Ri"
+//        }
+        Mobalet {
+            applicationId "com.paybyonline.ebiz"
+            versionCode 24
+            versionName = "3.0.7"
+            dimension "default"
+            resValue "string", "app_name", "Mobalet"
+            resValue "string", "title_activity_login", "Mobalet"
+            resValue "string", "title_activity_initial_loading", "Mobalet"
+            resValue "string", "referralId", "3fe96f2"
+            resValue "string", "about_heading_details", "<b>Mobalet (Mobile Wallet)</b> is a Mobile Application developed by Nepal E-Biz Management Pvt Ltd using its in-house proprietary technology ‘Paybyonline’. The Application allows customers to hold funds in Mobalet (Mobile Wallet) and pay for available products and services such as Telecom/Mobile top ups, ISP recharge/renewal, Satellite/Cable TV charges top up and renewals, Utility Bills, School Fees, Airline Tickets, Bus Tickets, Hotel Booking, Restaurant Payment, Taxi payments, and e-Commerce Shopping"
+            resValue "string", "domain", "www.mobalet.com"
+            resValue "string", "facebook_app_id", "159365804689671"
+            resValue "string", "fb_login_protocol_scheme", "fb159365804689671"
+            resValue "string", "com.twitter.sdk.android.CONSUMER_KEY", "PJFSldK6QGyC5INkP3uFZ54eW"
+            resValue "string", "com.twitter.sdk.android.CONSUMER_SECRET", "uhDXvCbQNOtkzkSlukfndRPIkjZ07PxUJlDjm265IR7GTbC6Ri"
+        }
+        MobaletTest {
+            applicationId "com.paybyonline.MobaletTest"
+            versionCode 2
+            versionName "3.0.4"
+            dimension "default"
+            resValue "string", "app_name", "MobaletTest"
+            resValue "string", "title_activity_login", "MobaletTest"
+            resValue "string", "title_activity_initial_loading", "MobaletTest"
+            resValue "string", "referralId", "3fe96f2"
+            resValue "string", "about_heading_details", "<b>Mobalet (Mobile Wallet)</b> is a Mobile Application developed by Nepal E-Biz Management Pvt Ltd using its in-house proprietary technology ‘Paybyonline’. The Application allows customers to hold funds in Mobalet (Mobile Wallet) and pay for available products and services such as Telecom/Mobile top ups, ISP recharge/renewal, Satellite/Cable TV charges top up and renewals, Utility Bills, School Fees, Airline Tickets, Bus Tickets, Hotel Booking, Restaurant Payment, Taxi payments, and e-Commerce Shopping"
+            resValue "string", "domain", "www.mobalet.com"
+            resValue "string", "facebook_app_id", ""
+        }
+        guheshwori {
+            applicationId "com.paybyonline.guheshwori"
+            versionCode 2
+            versionName "1.0.1"
+            dimension "default"
+            resValue "string", "app_name", "Guheshwori"
+            resValue "string", "title_activity_login", "Guheshwori"
+            resValue "string", "title_activity_initial_loading", "Guheshwori"
+            resValue "string", "referralId", "3fbf6a8"
+            resValue "string", "about_heading_details", ""
+            resValue "string", "domain", "www.guheshwori.mobalet.com"
+        }
+        tirnus {
+            applicationId "com.paybyonline.tirnus"
+            versionCode 1
+            versionName = "1.0.0"
+            dimension "default"
+            resValue "string", "app_name", "Tirnus"
+            resValue "string", "title_activity_login", "Tirnus"
+            resValue "string", "title_activity_initial_loading", "Tirnus"
+            resValue "string", "referralId", "3fcaa4d"
+            resValue "string", "about_heading_details", "<b>Tirnus</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "www.tirnus.com"
+        }
+        aimspay {
+            applicationId "com.paybyonline.aimspay"
+            versionCode 18
+            versionName = "3.0.3"
+            dimension "default"
+            resValue "string", "app_name", "Aimspay"
+            resValue "string", "title_activity_login", "Aimspay"
+            resValue "string", "title_activity_initial_loading", "Aimspay"
+            resValue "string", "referralId", "3fc5245"
+            resValue "string", "about_heading_details", "<b>Aimspay</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "www.Aimspay.com"
+            resValue "string", "facebook_app_id", ""
+        }
+        paybyonline {
+            applicationId "com.paybyonline"
+            versionCode 14
+            versionName = "3.0.1"
+            dimension "default"
+            resValue "string", "app_name", "PayByOnline"
+            resValue "string", "title_activity_login", "PayByOnline"
+            resValue "string", "title_activity_initial_loading", "PayByOnline"
+            resValue "string", "referralId", ""
+            resValue "string", "about_heading_details", "<b>PayByOnline</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "www.PayByOnline.com"
+        }
+        HimalayanEpay {
+            applicationId "com.paybyonline.hep"
+            versionCode 4
+            versionName = "2.0.2"
+            dimension "default"
+            resValue "string", "app_name", "Himalayan e-pay"
+            resValue "string", "title_activity_login", "Himalayan e-pay"
+            resValue "string", "title_activity_initial_loading", "Himalayan e-pay"
+            resValue "string", "referralId", "3fec1cc"
+            resValue "string", "about_heading_details", "<b>Himalayan e-pay</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "www.PayByOnline.com"
+        }
+        necpay {
+            applicationId "com.paybyonline.necpay"
+            versionCode 4
+            versionName = "2.0.3"
+            dimension "default"
+            resValue "string", "app_name", "NecPay"
+            resValue "string", "title_activity_login", "necPay"
+            resValue "string", "title_activity_initial_loading", "NecPay"
+            resValue "string", "referralId", "3fe5a57"
+            resValue "string", "about_heading_details", "<b>NecPay</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "www.NecPay.com"
+
+        }
+        Asian {
+            applicationId "com.paybyonline.asian"
+            versionCode 1
+            versionName = "1.0.0"
+            dimension "default"
+            resValue "string", "app_name", "Asian"
+            resValue "string", "title_activity_login", "Asian"
+            resValue "string", "title_activity_initial_loading", "Asian"
+            resValue "string", "referralId", "3fef365"
+            resValue "string", "about_heading_details", "<b>Asian saving & credit co-operative ltd</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "www.asian.mobalet.com"
+            resValue "string", "facebook_app_id", "159365804689671"
+            resValue "string", "fb_login_protocol_scheme", "fb159365804689671"
+            resValue "string", "com.twitter.sdk.android.CONSUMER_KEY", ""
+            resValue "string", "com.twitter.sdk.android.CONSUMER_SECRET", ""
+        }
+        naulakha {
+            applicationId "com.paybyonline.naulakha"
+            versionCode 1
+            versionName = "1.0.0"
+            dimension "default"
+            resValue "string", "app_name", "naulakha"
+            resValue "string", "title_activity_login", "naulakha"
+            resValue "string", "title_activity_initial_loading", "naulakha"
+            resValue "string", "referralId", "3feb505"
+            resValue "string", "about_heading_details", "<b>Naulakha saving & credit co-operative ltd</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "http://naulakha.mobalet.com/"
+            resValue "string", "facebook_app_id", "159365804689671"
+            resValue "string", "fb_login_protocol_scheme", "fb159365804689671"
+            resValue "string", "com.twitter.sdk.android.CONSUMER_KEY", ""
+            resValue "string", "com.twitter.sdk.android.CONSUMER_SECRET", ""
+        }
+        nscc {
+            applicationId "com.paybyonline.nscc"
+            versionCode 1
+            versionName = "1.0.0"
+            dimension "default"
+            resValue "string", "app_name", "Nirupan"
+            resValue "string", "title_activity_login", "Nirupan"
+            resValue "string", "title_activity_initial_loading", "Nirupan"
+            resValue "string", "referralId", "3fe31fc"
+            resValue "string", "about_heading_details", "<b>Nirupan saving & credit co-operative ltd</b> is an electronic payment service. A simple, robust One-Stop-Shop to accept payments or enable buying from almost anywhere - in your mobile app or online. We offer merchants and customers with integrated loyalty and rewards management, driving transaction volumes and growth."
+            resValue "string", "domain", "http://nscc.mobalet.com/"
+            resValue "string", "facebook_app_id", "159365804689671"
+            resValue "string", "fb_login_protocol_scheme", "fb159365804689671"
+            resValue "string", "com.twitter.sdk.android.CONSUMER_KEY", ""
+            resValue "string", "com.twitter.sdk.android.CONSUMER_SECRET", ""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:25.3.0'
+    implementation 'com.android.support:design:25.3.0'
+    implementation 'com.android.support:cardview-v7:25.3.0'
+    implementation 'com.android.support:recyclerview-v7:25.3.0'
+    implementation 'com.android.support:support-v4:25.3.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation('com.google.apis:google-api-services-people:v1-rev187-1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation 'com.android.support:multidex:1.0.2'
+
+//    implementation 'com.google.gdata:core:1.47.1'
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-appindexing:11.8.0'
+    implementation('com.google.api-client:google-api-client-android:1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation('com.google.apis:google-api-services-gmail:v1-rev76-1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    implementation 'com.sun.mail:android-mail:1.5.6'
+    implementation 'com.sun.mail:android-activation:1.5.6'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.stripe:stripe-android:2.0.2'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation('com.paypal.sdk:paypal-android-sdk:2.15.3') {
+        exclude group: 'io.card'
+    }
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'org.jsoup:jsoup:1.10.3'
+    implementation project(':sct_payment_lib')
+    implementation('com.facebook.android:facebook-login:4.28.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.android.support', module: 'cardview-v7'
+        exclude group: 'com.android.support', module: 'customtabs'
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-core-utils'
+    }
+    implementation 'com.twitter.sdk.android:twitter-core:3.1.1'
+}
+
+//apply plugin: 'com.google.gms.google-services'
+
+
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp">
+    <TextView
+        android:layout_toLeftOf="@+id/checkContact"
+        android:id="@+id/contactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Broadlink Internet"
+        android:textSize="@dimen/title_text"
+        android:textColor="#3E3E3E"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/check_box"
+        android:minLines="1">
+    </TextView>
+    <TextView
+        android:layout_below="@+id/contactName"
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Broadlink Internet"
+        android:textSize="@dimen/title_text"
+        android:textColor="#3E3E3E"
+        android:layout_marginLeft="@dimen/check_box"
+        android:minLines="1">
+    </TextView>
+    <CheckBox
+        android:layout_marginTop="15dp"
+        android:id="@+id/checkContactNumber"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_below="@id/contactNumber"
+        android:background="#97c2b6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+</RelativeLayout>

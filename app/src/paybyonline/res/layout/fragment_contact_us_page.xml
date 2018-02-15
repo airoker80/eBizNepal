@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/myTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/textsize_font" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E7E7E7" />
+
+            <View
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="2dp"
+                android:background="#FF8300" />
+
+            <!--<ScrollView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:fillViewport="true" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Nepal E-Biz Management Pvt Ltd"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/sent_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Maitighar Height, Kathmandu, Nepal"
+                android:textColor="#3E3E3E"
+                android:textSize=   "@dimen/sent_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Email: info@ebiznepal.com"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/sent_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No:- 9849227445"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/sent_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel: +977 - 01 - 4260622"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/sent_size" />
+
+        <LinearLayout
+            android:id="@+id/feedbackLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="Feedback"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textsize_font"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Subject"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/mail" />
+
+                <EditText
+                    android:id="@+id/subject"
+                    style="@style/CustomHintColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/profile_image_view_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_text_edit"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Message"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/mail" />
+
+                <EditText
+                    android:id="@+id/message"
+                    style="@style/CustomHintColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/profile_image_view_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rect_text_edit"
+                    android:gravity="top|left"
+                    android:hint="Enter your message..."
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/mail" />
+
+                <TextView
+                    android:id="@+id/error_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp" />
+
+                <Button
+                    android:id="@+id/btnSendMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/primary_light"
+                    android:padding="@dimen/_8sdp"
+                    android:text="SEND"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_font" />
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

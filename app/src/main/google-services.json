@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "898186877782",
+    "firebase_url": "https://rosy-rider-91705.firebaseio.com",
+    "project_id": "rosy-rider-91705"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898186877782:android:cbaee5674191ae12",
+        "android_client_info": {
+          "package_name": "com.paybyonline.ebiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898186877782-buad8pvivbgkum4atghu72noshrrom8l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "898186877782-8hib7n8it9cr2pctdskatr9s7p4i719p.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "898186877782-cfbeta4skmk34qjtthue1n16qfnb1p3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paybyonline.ebiz",
+            "certificate_hash": "a89707e6dd7b62138d063ac315399689c233f11e"
+          }
+        },
+        {
+          "client_id": "898186877782-i9mq3osdp26dc3rorb6h6ilvuqc3uu5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paybyonline.ebiz",
+            "certificate_hash": "ea9675af280fe40199fa6a2aade14b21b4adf50d"
+          }
+        },
+        {
+          "client_id": "898186877782-pg69m6u0a7jjcfsc2scmootbu4ikm88n.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "898186877782-igh4c8osol9rmmjshrnr6m1uprog95a6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "898186877782-qbn8qfn48gk1m84ohg6ldnu4f3vip50t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqm4_4z4o6ituEjR19XrAcxbWxa2uqGS4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898186877782-buad8pvivbgkum4atghu72noshrrom8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

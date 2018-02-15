@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/circle_view_icons"
+        android:layout_width="@dimen/_300sdp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/fund_transfer_background"/>
+
+</LinearLayout>

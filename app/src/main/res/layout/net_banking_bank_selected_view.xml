@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginStart="@dimen/margin_left"
+            android:text="Amount[NPR]:"
+            android:textColor="#0B5F92"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amtVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#EE801F"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Customtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top"
+        android:text="Payment Note" />
+
+    <EditText
+        android:id="@+id/payment_note"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_top"
+        android:hint="Payment note"
+        android:inputType="text"
+        android:textColorHint="#DEDADA" />
+
+    <TextView
+        android:id="@+id/profile_name_title"
+        style="@style/Customtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top"
+        android:text="Profile Name" />
+
+    <EditText
+        android:id="@+id/profile_name"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_top"
+        android:hint="Enter your profile name"
+        android:inputType="text"
+        android:textColorHint="#DEDADA" />
+
+    <CheckBox
+        android:id="@+id/chkSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save as Payment Profile name"
+        android:textColor="#535353"
+        android:textSize="@dimen/font_size" />
+
+    <CheckBox
+        android:id="@+id/chkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:text="I agree that this payment is not refundable."
+        android:textColor="#535353"
+        android:textSize="@dimen/font_size" />
+
+    <Button
+        android:id="@+id/payNowBtn"
+        style="@style/CustomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/effect"
+        android:text="PAY NOW"
+        android:textSize="@dimen/size_font" />
+
+</LinearLayout>

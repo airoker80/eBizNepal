@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rechargeServiceName"
+                android:textColor="#c47e4d"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/prepmob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#c47e4d"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:textSize="@dimen/_13sdp"/>
+                <AutoCompleteTextView
+                    android:layout_below="@+id/prepmob"
+                    android:id="@+id/mobnoTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:backgroundTint="#c47e4d"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginRight="@dimen/space_right"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:textColorHint="#e69b94"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+
+                    />
+                <ImageView
+                    android:id="@+id/contactIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/book"
+                    android:layout_gravity="right"
+                    android:layout_alignTop="@+id/mobnoTxt"
+                    android:layout_alignRight="@+id/mobnoTxt"
+                    android:layout_alignEnd="@+id/mobnoTxt" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/amountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="#c47e4d"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:paddingTop="@dimen/_4sdp"
+                android:textSize="@dimen/_13sdp"/>
+            <EditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_marginRight="@dimen/space_right"
+                android:visibility="gone"
+                android:backgroundTint="#d9685e"
+                android:textColorHint="#e69b94"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:paddingTop="@dimen/_4sdp"
+                android:textSize="@dimen/_13sdp"
+                android:id="@+id/amtEdit"/>
+            <Spinner
+                android:layout_marginLeft="@dimen/space_left"
+                android:id="@+id/amtSpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Enter Amount"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/promoCodeLayout">
+
+               <!-- <TextView
+                    android:id="@+id/PromoCode"
+                    android:text="Promo Code"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#c47e4d"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_13sdp"/>-->
+                <EditText
+                    android:layout_below="@+id/PromoCode"
+                    android:id="@+id/dealCode"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:backgroundTint="#c47e4d"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:hint="Promo code"
+                    android:textColorHint="#e69b94"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+
+                    />
+                <Button
+                    android:text="Check"
+                    android:id="@+id/checkDealBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+           <!-- <TextView
+                android:text="Promo Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Customtextview"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:paddingTop="@dimen/padding_top"
+                android:textSize="@dimen/text_size"/>
+            <EditText
+                android:id="@+id/dealCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_marginRight="@dimen/space_right"
+                style="@style/CustomHintColor"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:paddingTop="@dimen/space_top"
+                android:textSize="@dimen/font_size"
+
+                />-->
+
+
+            <Button
+                android:id="@+id/btnPaynow"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge"
+                android:textColor="#c47e4d"
+                android:layout_alignParentLeft="true"
+                style="@style/CustomButton"
+                android:layout_marginBottom="@dimen/_4sdp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

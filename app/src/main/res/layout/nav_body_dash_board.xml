@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:checkableBehavior="single"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:addStatesFromChildren="true"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <!--
+                        <TextView
+                            android:id="@+id/userHoldManeyBalanceStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/nav_menu_pressed"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:textColor="#cd3729"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+            -->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/fav_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginTop_count"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/fabServices"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="0.5"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="45dp">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/img_notify"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/msg" />
+
+                                    <TextView
+                                        android:id="@+id/fabServicesCount"
+                                        android:layout_width="@dimen/img_fav"
+                                        android:layout_height="@dimen/img_fav"
+                                        android:layout_marginLeft="20dp"
+                                        android:background="@drawable/notify"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="#ffffff"
+                                        android:textSize="@dimen/nav_textsize"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/effect"
+                                    android:padding="5dp"
+                                    android:text="Favorites"
+                                    android:textColor="#3E3E3E"
+                                    android:textSize="@dimen/list_item_size" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/userNotification"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="45dp">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/img_notify"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/notify"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/notificationCount"
+                                        android:layout_width="@dimen/img_fav"
+                                        android:layout_height="@dimen/img_fav"
+                                        android:layout_marginLeft="16dp"
+                                        android:background="@drawable/notify"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="#ffffff"
+                                        android:textSize="@dimen/nav_textsize"
+
+                                        android:textStyle="bold"
+
+                                        />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/effect"
+                                    android:padding="5dp"
+                                    android:text="Notification"
+                                    android:textColor="#3E3E3E"
+                                    android:textSize="@dimen/list_item_size" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dashboard"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:clickable="true"
+                            android:drawableLeft="@mipmap/ic_dashboard_black_24dp"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Dashboard" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/notification_txt"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/ic_notification_bell"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Notification" />
+
+                        <TextView
+                            android:id="@+id/favlist_txt"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/ic_favourite"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Favourite"
+                            android:visibility="gone" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/Payments"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/ic_creditcard"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Payments"
+                            android:visibility="gone" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9" />
+
+                        <TextView
+                            android:id="@+id/buyPage"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_creditcard"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Payments" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9" />
+
+                        <TextView
+                            android:id="@+id/wallet"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableLeft="@mipmap/wallet"
+                            android:drawablePadding="25dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:gravity="center_vertical"
+                            android:text="Wallet"
+                            android:textColor="#3E3E3E" />
+
+                        <TextView
+                            android:id="@+id/addMoney"
+                            style="@style/nav_dash_subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@mipmap/add"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:text="Load Wallet"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/sendMoneyDetails"
+                            style="@style/nav_dash_subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_fundtransfer_black"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:text="Fund Transfer"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/nav_space"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/ic_offers"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Offer"
+                            android:textColor="#3E3E3E"
+                            android:textSize="@dimen/list_item_size"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9" />
+
+
+                        <TextView
+                            android:id="@+id/report"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_trending_up"
+                            android:drawablePadding="25dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:gravity="center_vertical"
+                            android:text="Report" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9" />
+
+                        <TextView
+                            android:id="@+id/transactionalList"
+                            style="@style/nav_dash_subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@mipmap/add"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:text="Transactional List"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/summaryReport"
+                            style="@style/nav_dash_subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_fundtransfer_black"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:text="Summary Report"
+                            android:visibility="gone" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/history"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_history"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="History"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/myProfile"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_user"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="My Profile"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/shareandEarn"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@mipmap/report"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Share And Earn"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/aboutUs"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_info"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="About Us"
+                            android:visibility="gone" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/contactUs"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@mipmap/contactus"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Contact Us"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/settingTxt"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@drawable/ic_settings"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Settings" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9" />
+
+
+                        <TextView
+                            android:id="@+id/simSales"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@mipmap/salesim"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Sale Sim"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/purchaseReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sale Sim"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/simDetails"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nav_menu_normal_state"
+                            android:drawableLeft="@mipmap/simdetails"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Sim Details"
+                            android:visibility="gone" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e9e9e9"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/signOut"
+                            style="@style/nav_dash_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/effect"
+                            android:drawableLeft="@mipmap/signout"
+                            android:drawablePadding="25dp"
+                            android:gravity="center_vertical"
+                            android:text="Sign Out"
+
+                            />
+
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#e9e9e9"/>-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/aboutUsShort"
+                style="@style/nav_dash_footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="2dp"
+                android:text="About Us"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contactUsShort"
+                style="@style/nav_dash_footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="2dp"
+                android:text="Contact Us"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

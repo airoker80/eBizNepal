@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dashboard_grid">
+    </android.support.v7.widget.RecyclerView>
+   <!-- <Button
+        android:layout_width="match_parent"
+        android:id="@+id/kycForm"
+        android:layout_height="wrap_content"
+        android:background="#3e9ccc"
+        android:textSize="13sp"
+        android:text="KYC [ Know your Customer Document Upload ]"
+        android:textColor="#fff"
+        android:layout_alignBottom="@id/dashboard_grid"/>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/more_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
